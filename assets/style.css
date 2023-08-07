@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Lobster&family=Montserrat:wght@500;600&display=swap');
+
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+:root{
+    --cor-principal:#A1CCD1;
+    --cor-secundaria:#F4F2DE;
+    --cor-terciaria:#E9B384;
+    --cor-quarternaria:#7C9D96;
+    --fonte:'Lobster', cursive;
+    --fonte-color:green;
+}
+body{
+    background-color:var(--cor-principal) ;
+    box-sizing: border-box;
+}
+.cabecalho{
+    background-color:var(--cor-secundaria);
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.cabecalho__navegacao{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 80PX;
+}
+.cabecalho__navegacao__links
+{
+    text-decoration: none;
+    font-family: var(--fonte);
+}
+
+.principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: green;
+}
+
+.principal__div{
+    /*width: 400px;*/
+    height:370px ;
+    background-color:var(--cor-principal);
+    padding-top: 30px;
+   
+}
+.principal__div__titulo{
+    font-family: var(--fonte);
+    padding-bottom: 5%;
+}
+
+.secundaria__div{
+    height:370px;
+    background-color:var(--cor-secundaria);
+    width: 100%;
+}
