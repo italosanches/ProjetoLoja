@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Lobster&family=Montserrat:wght@500;600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Preahvihear&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
 *{
     margin: 0;
     border: 0;
@@ -12,13 +13,19 @@
     --cor-quarternaria:#7C9D96;
     --fonte:'Lobster', cursive;
     --fonte-color:green;
+    --fonte--paragrafo:'Preahvihear',sans-serif ;
+    --fonte--rodape:'Titillium Web', sans-serif;
+}
+.paragrafo{
+    font-family: var(--fonte--paragrafo);  
+    font-size: 15px;
 }
 body{
-    background-color:var(--cor-principal) ;
+    background-color:var(black) ;
     box-sizing: border-box;
 }
 .cabecalho{
-    background-color:var(--cor-secundaria);
+    background-color:var(--cor-terciaria);
     padding-top: 2%;
     padding-bottom: 2%;
 }
@@ -39,22 +46,43 @@ body{
     flex-direction: column;
     align-items: center;
     color: green;
+    
 }
 
 .principal__div{
     /*width: 400px;*/
-    height:370px ;
+    height:390px ;
     background-color:var(--cor-principal);
     padding-top: 30px;
+    width: 100%;
+    text-align: center;
+    background-image: url('../images/background.png'),none
    
 }
 .principal__div__titulo{
     font-family: var(--fonte);
-    padding-bottom: 5%;
+    padding-top: 120px;
+    padding-bottom: 1%;
 }
 
 .secundaria__div{
-    height:370px;
-    background-color:var(--cor-secundaria);
+    height:350px;
+    background-color:var( --cor-secundaria);
+    padding-top: 30px;
+    text-align: center;
+    font-family: var(--fonte);
     width: 100%;
+}
+.secundaria__div__titulo{
+    font-family: var(--fonte);
+    padding-bottom: 1%;
+}
+
+.rodape{
+    background-color:var(--cor-terciaria);
+    text-align: center; 
+    height: 34px;
+}
+.rodape__texto{
+    font-family: var(--fonte--rodape);
 }
